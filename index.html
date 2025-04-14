@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="music-container">
+        <h1 class="music-heading">Music Player</h1>
+        <div class="music-player">
+            <div class="album-art">
+                <img id="album-cover" src="Album cover/humari_adhuri_kahani.jpg" alt="Album Cover">
+            </div>
+            <h2 id="song-title">Humari Adhuri Kahani</h2>
+            <h3 id="artist-name">Arijit Singh</h3>
+            
+            <audio id="audio" src="Songs/humari_adhuri_kahani.mp3"></audio>
+            
+            <div class="controls">
+                <button id="prev" class="btn"><i class="fas fa-backward"></i></button>
+                <button id="play" class="btn"><i id="play-icon" class="fas fa-play"></i></button>
+                <button id="next" class="btn"><i class="fas fa-forward"></i></button>
+            </div>
+            
+            <input type="range" id="progress" value="0">
+            
+            <div class="extra-controls">
+                <button id="shuffle" class="btn"><i class="fas fa-random"></i></button>
+                <button id="repeat" class="btn"><i class="fas fa-redo"></i></button>
+                <button id="favorite" class="btn"><i class="far fa-heart"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

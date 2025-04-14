@@ -1,0 +1,133 @@
+body {
+    background: linear-gradient(135deg, #393b47, #6d4c99);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    min-height: 90vh;
+}
+
+.music-heading {
+    font-size: 38px;
+    font-weight: 700;
+    color: #ededed;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 
+                 0px 0px 20px rgba(255, 255, 255, 0.6);
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 0;
+}
+
+.music-player {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.album-art img {
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.album-art img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 
+                0 0 35px rgba(255, 255, 255, 0.6);
+}
+
+#song-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin: 12px 0 5px;
+}
+
+#artist-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.controls, .extra-controls {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    padding: 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.12);
+}
+
+#progress {
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    accent-color: #fff;
+}
+
+@media (max-width: 480px) {
+    .music-container {
+        min-height: auto;
+    }
+
+    .music-player {
+        padding: 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    .album-art img {
+        width: 320px;
+        height: 250px;
+    }
+
+    #song-title {
+        font-size: 20px;
+    }
+
+    #artist-name {
+        font-size: 16px;
+    }
+}
